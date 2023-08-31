@@ -52,4 +52,40 @@ p {
   text-align: center;
   background-color: #c44900;
   border-radius: 4px;
+  color: #ffff;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(6px);
+  background-color: #0c0c0cc3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winnerContainer {
+  height: 20vh;
+  width: 40%;
+  background-color: #686262d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.times {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
