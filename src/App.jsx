@@ -13,6 +13,15 @@ function App() {
     ninethInput: '',
   });
 
+  const handleChange = (e) => {
+    setValue({
+      ...value,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  console.log(value);
+
   return (
     <div className="container">
       <div className="boxContainer">
@@ -21,23 +30,68 @@ function App() {
           you wanna use 😊.
         </p>
         <div className="box">
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="firstInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="secondInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="thirdInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="fourthInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="fivethInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="sixthInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="seventhInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="eightInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
 
-          <input type="text" defaultValue={''} />
+          <input
+            type="text"
+            name="ninethInput"
+            defaultValue={''}
+            onChange={handleChange}
+          />
         </div>
       </div>
     </div>
